@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QureO Helper — مساعد البرمجة</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <header>
+      <div class="mark">QH</div>
+      <div><h1>QureO Helper</h1><p>مساعد تدريبات Java و Python</p></div>
+    </header>
+    <section class="panel">
+      <label for="lang">لغة البرمجة</label>
+      <select id="lang"><option value="python">Python</option><option value="java">Java</option></select>
+      <label for="question">اكتب السؤال أو وصف المطلوب</label>
+      <textarea id="question" rows="6" placeholder="الصق نص السؤال هنا..."></textarea>
+      <div class="buttons"><button id="analyze">تحليل السؤال</button><button id="clear" class="secondary">مسح</button></div>
+    </section>
+    <section id="result" class="panel output" aria-live="polite">
+      <h2>النتيجة</h2><p class="placeholder">اكتب سؤالًا واضغط «تحليل السؤال» لعرض مساعدة.</p>
+    </section>
+    <footer>أداة مساعدة مستقلة — لا تتصل بالمنصات التعليمية ولا تقرأ صفحاتها تلقائيًا.</footer>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
